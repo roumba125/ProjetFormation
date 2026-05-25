@@ -2,6 +2,6 @@
 builder = "nixpacks"
 
 [deploy]
-startCommand = "php artisan migrate --force && php artisan db:seed --class=BreedSeeder --force && php artisan db:seed --class=AdminUserSeeder --force && php artisan db:seed --class=SheepSeeder --force && php artisan storage:link && php artisan config:cache && php artisan route:cache && frankenphp run --config /app/Caddyfile"
+startCommand = "php artisan migrate --force && php artisan db:seed --class=BreedSeeder --force && php artisan db:seed --class=AdminUserSeeder --force && php artisan db:seed --class=SheepSeeder --force && php artisan storage:link && php artisan config:cache && php artisan route:cache && php -S 0.0.0.0:$PORT -t public"
 healthcheckPath = "/up"
-healthcheckTimeout = 300
+healthcheckTimeout = 120
