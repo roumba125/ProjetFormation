@@ -1,0 +1,16 @@
+/* BergerPro - styles globaux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #fdf8f2;
+    color: #2d1f14;
+}
+
+#app {
+    min-height: 100vh;
+}
