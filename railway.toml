@@ -2,4 +2,4 @@
 builder = "nixpacks"
 
 [deploy]
-startCommand = "php artisan migrate --force && php artisan storage:link && php artisan config:cache && php artisan route:cache && frankenphp run --config /etc/frankenphp/Caddyfile"
+startCommand = "php artisan migrate --force && php artisan db:seed --class=BreedSeeder --force && php artisan db:seed --class=AdminUserSeeder --force && php artisan db:seed --class=SheepSeeder --force && php artisan storage:link && php artisan config:cache && php artisan route:cache && frankenphp run --config /etc/frankenphp/Caddyfile"
