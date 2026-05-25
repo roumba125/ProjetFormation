@@ -1,0 +1,30 @@
+{
+  "_index-BaPK0rA5.js": {
+    "file": "assets/index-BaPK0rA5.js",
+    "name": "index"
+  },
+  "resources/js/admin.js": {
+    "file": "assets/admin-BSi3Kbn2.js",
+    "name": "admin",
+    "src": "resources/js/admin.js",
+    "isEntry": true,
+    "imports": [
+      "_index-BaPK0rA5.js"
+    ],
+    "css": [
+      "assets/admin-CdOAYJFR.css"
+    ]
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BaKIZWto.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_index-BaPK0rA5.js"
+    ],
+    "css": [
+      "assets/app-veITC2QL.css"
+    ]
+  }
+}
