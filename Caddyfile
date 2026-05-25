@@ -1,10 +1,8 @@
 {
-	frankenphp
-	order php_server before file_server
+    frankenphp
 }
 
 :{$PORT} {
-	root * /app/public
-	php_server
-	encode gzip
+    root * /app/public
+    php_server
 }
